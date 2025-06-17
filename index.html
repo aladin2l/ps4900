@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	 body {
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 255);
+            width: 98%;
+            margin: auto;
+			font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .notification {
+            top: 3%;
+            right: 2%;
+            position: fixed;
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 255);
+            border: solid 1px rgb(53, 54, 58);
+            border-bottom: solid 3px rgb(0, 100, 255);
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            animation: slide 500ms;
+        }
+        @keyframes slide {
+            from {
+                transform: translateX(150%);
+            }
+            to {
+                transform: translateX(0%);
+            }
+        }
+        .notification2 {
+            animation: slide2 500ms;
+        }
+        @keyframes slide2 {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(120%);
+            }
+        }
+        .head {
+            margin-top: 1%;
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 255);
+            border: solid 1px rgb(53, 54, 58);
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .btn {
+            width: 180px;
+            margin-top: 1%;
+            margin-left: 1%;
+            background-color: rgb(32, 33, 36);
+            color: rgb(255, 255, 255);
+            border: solid 1px rgb(53, 54, 58);
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 300ms;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(53, 54, 58);
+        }
+        .gold {
+            color: rgb(255, 215, 0);
+        }
+        .red {
+            color: rgb(255, 0, 0);
+        }
+        .green {
+            color: rgb(0, 255, 0);
+        }
+        .blue {
+            color: rgb(0, 100, 255);
+        }
+        .gray {
+            color: rgb(100, 100, 100);
+        }
+        .brown {
+            color: rgb(150, 50, 0);
+        }
+        .bottom {
+            bottom: 1%;
+            position: absolute;
+            width: 98%;
+            margin: auto;
+            font-size: 14px;
+            font-style: italic;
+            text-align: center;
+            border: solid 1px rgb(53, 54, 58);
+            border-radius: 5px;
+            padding: 5px;
+        }
+	</style>
+    <title>PS4 Ormoc Jailbreaker</title>
+    <script>
+	if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+
+        function showMessage(msg) {
+            document.getElementById("message").innerHTML = msg;
+        }
+    </script>
+    
+   
+</head>
+<body>
+<div class="head">
+        <h1><img src="data:img/png;base64, iVBORw0KGgoAAAANSUhEUgAAAJoAAAAiCAYAAACnZsAPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7xJREFUeNrsnO2R2jAQhkWGApwOfB04FWAqOKeCgwpyrgCogLsKzqkgpAL7KsAdxFQQd0DkmdXMoshgy1ojYN+Z/XE/MLL87Kd8TI7Ho2CxqPWFt4B1K6DFYCwWOWi5tCYH76VtGTwWdeqMpL0CeH+l/ZK2kBbwVjNoVGrgSqR9IOg40jFo5Eog0uUQ+VgMmjPV0ipDTbeHlMpi0JxoKe2bATYBKTXhR/AYmo4Q0RorWiJY06HuiL6buh4s4d5cKQSz2eOSeA8L30FTOpzZ3IQItnyE+8qkpQOBi8SwkVADwZwAsC2qpTfS1rfSDLRpRhhNqbUAoG3HNyF83pduPICSRm/YBj8jH0Cj6kC/SpsQWGpYv21js9IgrSE69VmPq2jWzD//UDVpfNbZX2+QMrGeLa+lN0MbF/WQhaPnkCoV9BWD5ocODlOV3mCMmSYbuPZa0f8k7eetdZ0sP7XQIliTspeEEwAvIlp1gw/q5QqNh6sRSg4Ff4BKgSdKyHyJaJ8j1SGBowf1Iv6fd717DlgAxf5KG4ukY6Xra4NWGgpr1x78QTw+uEYB37fh2CLnqGHNb2MuYjpSlKjgBgMNsjmxF+fCbtrexUFKKJp9hczkZJkYPmAeBbRm8T/AS0LwjC7KwGLkVdQhe2GAbEkcQX3RGp5TgBwjvaZTTDvClUBtEg2ILjF8foauG4rTM8NP+Ltw4HXPLbDfs2KIYldNk31ACxBcQ+ub/QVAI22jlHaQmmy7If07D3cMWAh1WKLtX+pLVz81LHgluh1DqMgT93zg+ligbAEtASssa7lHeX1cT5MVlAhe1Y4YtC20wJeK+h2085UBji6q4Rq/tWgVthTvMVhxZ4AkLfvbt9mJDNdYaaMMmwipB4tcCzKpBrt+Dxl8rrFsii70egaMDNJYadl1noOrS/1X3RlkgQGEqud9hi17FhOt99x1CwhUKUrjO4i0IQatNowflOYIsAiB0bXrVEcbtUX9p9KAz6Cp98mGjoZSixHLd0Hz9stMezaVOD3/rAyg1VoplcDaapw61QPdGsLmfuCiMzRueBbdXt8u4MayG4lOQ6JIDZDZND07QXN0tDaAtu65ri1Knyc1mlp0AkDEws2wU/1vQNDBQ1WX6SKCpdp3Up3lVaL7PNHkUD7WnoVF6VIix1HHiu+QPsXkwo+8BCg0x4aFFEB6W+E5F+dfqa7QGKMUrLvVpYFtrUHlQjXqXBmuB9HE0c9WtXWPOKJlhq6TxaANgi6GOm8D4OGuk8WgsVg0+ifAAKDN9R9G9U6hAAAAAElFTkSuQmCC" alt=""></h1>
+    </div>
+	<font size="+5"><p>ORMOC GAMING CONSOLE REPAIR</p></font>
+    <pre id='console'></pre>
+	<center><font style='color:white;font-size:25px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;'>GoldHEN FW v9.00</font></center>
+    <br><br><br>
+	<div id="message" style='color:white;font-size:30px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;'>Jailbreaking. Please, <font color="#ee596f">WAIT!!</font> <font-weight:bold;color:yellow;margin:0 0 0 0.0;text-shadow:3px 2px #3d3939;>if GoldHEN not loaded after 2 seconds please <font color="#ee596f">RESTART PS4</font></div>
+    <div class="bottom">
+        <p>Web-Design / Developed & Hosted by Aladin F. Toel</a></p>
+        <p>Many Many Thanks To All contributor's of PlayStation Jailbreak Scene</p>
+		</div>
+   </body>
+   <script type='module' src='./alert.mjs'></script>
+</html>
