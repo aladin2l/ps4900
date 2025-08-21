@@ -1810,14 +1810,15 @@ function array_from_address(addr, size) {
     nogc.push(og_array);
     return og_array;
 }
-
 kexploit().then(() => {
 
  const PROT_READ = 1;
  const PROT_WRITE = 2;
  const PROT_EXEC = 4;
-
-var loader_addr = chain.sysp(
+ 
+function PayloadLoader(Pfile)
+{
+    var loader_addr = chain.sysp(
   'mmap',
   new Int(0, 0),                         
   0x1000,                               
@@ -1827,12 +1828,14 @@ var loader_addr = chain.sysp(
   0
 );
 
+
+
  var tmpStubArray = array_from_address(loader_addr, 1);
  tmpStubArray[0] = 0x00C3E7FF;
 
  var req = new XMLHttpRequest();
  req.responseType = "arraybuffer";
- req.open('GET','payload.bin');
+ req.open('GET',Pfile);
  req.send();
  req.onreadystatechange = function () {
   if (req.readyState == 4) {
@@ -1856,5 +1859,15 @@ var loader_addr = chain.sysp(
     );	
    }
  };
+
+}
+
+
+//Load ABC fix as a regular Payload
+setTimeout(PayloadLoader("aio_patches.bin"),500);
+log("AIO Fixes Applied.!");
+//Load GoldHEN :)
+setTimeout(PayloadLoader("goldhen.bin"),500);
+
 
 })
