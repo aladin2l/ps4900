@@ -6,7 +6,7 @@ cache.html
 config.mjs
 index.html
 lapse.mjs
-payload.bin
+goldhen.bin
 psfree.mjs
 kpatch\900.elf
 module\chain.mjs
@@ -19,6 +19,7 @@ module\rw.mjs
 module\utils.mjs
 module\view.mjs
 rop\900.mjs
+aio_patches.bin
 
 NETWORK:
 *
